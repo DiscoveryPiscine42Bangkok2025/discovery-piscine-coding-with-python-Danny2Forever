@@ -5,7 +5,7 @@ def iszero(num):
 
 def main():
     '''docstring'''
-    num = input()
-    iszero(int(num))
+    num = int(input())
+    iszero(num)
 
 main()
