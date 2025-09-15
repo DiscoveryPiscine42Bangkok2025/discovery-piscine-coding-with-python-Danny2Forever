@@ -3,6 +3,7 @@ def main():
     '''docstring'''
     first_name = "Teerapat"
     last_name = "Tuanpromrat"
-    print(f"{first_name} {last_name}")
+    whole_name = f"{first_name} {last_name}"
+    print(whole_name)
 
 main()
