@@ -10,7 +10,7 @@ def isneg(num):
 
 def main():
     '''docstring'''
-    num = input()
-    isneg(int(num))
+    num = int(input())
+    isneg(num)
 
 main()
