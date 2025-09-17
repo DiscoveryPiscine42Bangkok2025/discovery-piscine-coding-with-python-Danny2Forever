@@ -8,7 +8,7 @@ def main():
 ....K.
 ..R...
 ......
-...R.R\
+...R..\
 """
 
     checkmate(board)
