@@ -4,12 +4,13 @@ from checkmate import checkmate
 def main():
     '''docstring'''
     board = """\
-......
+.....Q
 ....K.
+..R...
 ......
-.Q....
-......\
+...R.R\
 """
+
     checkmate(board)
 
 if __name__ == "__main__":
