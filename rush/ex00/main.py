@@ -4,10 +4,11 @@ from checkmate import checkmate
 def main():
     '''docstring'''
     board = """\
-R...
-.K..
-..P.
-....\
+......
+....K.
+......
+.Q....
+......\
 """
     checkmate(board)
 

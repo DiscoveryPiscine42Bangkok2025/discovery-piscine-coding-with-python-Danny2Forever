@@ -7,7 +7,10 @@ def long_walk(pos, direction, brd):
             try:
                 cal_pos[0] += direct[0]
                 cal_pos[1] += direct[1]
-                brd[cal_pos[0]][cal_pos[1]] = "x"
+                if cal_pos[0] < 0 or cal_pos[1] < 0:
+                    break
+                elif brd[cal_pos[0]][cal_pos[1]] == "." or brd[cal_pos[0]][cal_pos[1]] == "o":
+                    brd[cal_pos[0]][cal_pos[1]] = "x"
             except IndexError:
                 break
 
@@ -62,7 +65,7 @@ def checkmate(board):
     for i in brd:
         if "o" in i:
             check_mate = False
-        # print(i)
+        #print(i) # You wanna see the board?
 
     if check_mate:
         print("Success")
