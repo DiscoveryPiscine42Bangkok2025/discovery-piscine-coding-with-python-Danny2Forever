@@ -1,1 +1,0 @@
-                print(king_pos)

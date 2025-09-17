@@ -79,7 +79,7 @@ def checkmate(board):
     for i in brd:
         if "o" in i:
             check_mate = False
-        print(i) # You wanna see the board?
+        # print(i) # You wanna see the board?
 
     # recheck if the king can counter attack
     direction = ([1, 0], [-1, 0], [0, -1], [0, 1], [-1, -1], [-1, 1], [1, -1], [1, 1])
