@@ -1,6 +1,11 @@
-'''checkmate'''
+'''
+check by brute force
+all the possible pieces walk and check
+any left square for the king's move
+now have no case for the king's counter attack
+'''
 def long_walk(pos, direction, brd):
-    '''docstring'''
+    '''for pieces that far walk'''
     for direct in direction:
         cal_pos = [pos[0], pos[1]]
         while True:
@@ -15,7 +20,7 @@ def long_walk(pos, direction, brd):
                 break
 
 def checkmate(board):
-    '''docstring'''
+    '''checkmate'''
     check_mate = True
     brd = board.split('\n')
     brd = [list(row) for row in brd]
